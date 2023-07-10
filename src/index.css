@@ -37,7 +37,45 @@ body{
 
 .continent_location{
   position: absolute;
-  
 }
 
+.country{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap :100px;
+  margin : 20px;
+}
+
+.country_items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap : 50px;
+}
+
+.countries_list{
+  display: flex;
+  flex-direction: column;
+}
+
+.destination{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin : 20px;
+  gap: 50px;
+}
+
+
+.destination_items{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
 

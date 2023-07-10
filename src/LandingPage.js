@@ -1,6 +1,7 @@
 import React from 'react'
 import {data} from "./Data"
 import {CiLocationOn} from "react-icons/ci"
+import {Link} from "react-router-dom"
 
 const LandingPage = () => {
   return (
@@ -10,7 +11,7 @@ const LandingPage = () => {
         <ul className='continent_items'>
             {data.continents.map(continent => (
                 <li className='continent_list'>
-                  <img src = {continent.image} width= "300" height= "300"/>
+                 <Link to = {`/countries/${continent?.id}`}><img src = {continent.image} width= "300" height= "300"/></Link> 
                   <div className='continent_location'>
                   <p><span><CiLocationOn/></span> {continent?.name}</p>
                   </div>
